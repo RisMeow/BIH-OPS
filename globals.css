@@ -1,0 +1,118 @@
+:root {
+  --bih-blue: #00509E;
+  --bih-blue-dark: #003870;
+  --bih-gold: #E8AB4D;
+  --bih-gold-dark: #cc9030;
+  --bih-teal: #56B9B7;
+  --bih-teal-light: #e0f5f5;
+  --bih-gray-50: #f9fafb;
+  --bih-gray-100: #f3f4f6;
+  --bih-gray-200: #e5e7eb;
+  --bih-gray-300: #d1d5db;
+  --bih-gray-700: #374151;
+  --bih-gray-900: #111827;
+  --bih-white: #ffffff;
+  --bih-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --bih-radius: 8px;
+  
+  --foreground: var(--bih-gray-900);
+  --background-start: var(--bih-gray-50);
+  --background-end: var(--bih-gray-100);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--background-end)
+    )
+    var(--background-start);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--bih-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--bih-blue);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--bih-blue-dark);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--bih-blue);
+  border: 1px solid var(--bih-blue);
+}
+.btn-secondary:hover {
+  background-color: var(--bih-teal-light);
+}
+
+.btn-accent {
+  background-color: var(--bih-gold);
+  color: white;
+}
+.btn-accent:hover {
+  background-color: var(--bih-gold-dark);
+}
+
+.card {
+  background: white;
+  border-radius: var(--bih-radius);
+  box-shadow: var(--bih-shadow);
+  padding: 1.5rem;
+  border: 1px solid var(--bih-gray-200);
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--bih-radius);
+  border: 1px solid var(--bih-gray-300);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.input:focus {
+  outline: 2px solid var(--bih-blue);
+  border-color: transparent;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--bih-gray-700);
+}
