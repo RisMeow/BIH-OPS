@@ -9,19 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "5.22.0",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.31.0",
+    "lucide-react": "^0.378.0",
+    "next": "14.2.3",
+    "next-auth": "^4.24.13",
+    "next-themes": "^0.3.0",
+    "openai": "^6.17.0",
+    "puppeteer-core": "^24.36.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3",
-    "lucide-react": "^0.378.0",
     "recharts": "^2.12.7",
-    "clsx": "^2.1.1"
+    "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^20",
+    "@types/puppeteer": "^5.4.7",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.23",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.5.6",
+    "prisma": "5.22.0",
+    "tailwindcss": "^4.1.18",
+    "ts-node": "^10.9.1",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
